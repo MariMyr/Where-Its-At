@@ -3,3 +3,35 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --white: #FFFFFF;
+  --dark-blue: #231F42;
+  --pink: #F56B9A;
+  --turquoise: #37AEAB;
+  --purple: #BB6AC9;
+  --organge: #F39440;
+}
+
+@font-face {
+  font-family: 'Sansita One';
+  src: url('./assets/fonts/SansitaOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Sansita One', sans-serif;
+} 
+
+/*
+Använda fonts: 
+h1, h2, .logo-text {
+  font-family: 'Sansita One', sans-serif;
+}
+
+body, p, button, input {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+*/

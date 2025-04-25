@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import HomePage from './pages/homepage/HomePage';
 import EventsPage from './pages/eventspage/EventsPage';
 import EventDetailsPage from './pages/eventdetailspage/EventDetailsPage';
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element : <CartPage />,
     }, 
     {
-        path : '/order',
+        path : '/orders',
         element : <OrderPage />
     }, 
 ]);
