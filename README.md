@@ -52,7 +52,7 @@ React-router-dom, axios osv som vi gått igenom under lektioner räknas inte. Om
 
 ## Övrig info
 
-Figma-skissen ger inte en fullständig överblick över hur projektet bör byggas. [Se tillhörande introduktionsfilm](https://funet.sharepoint.com/:v:/s/FrontendutvecklareYH-Fe24Distans/Eb0ibwDmzD5Cigvm9insGJwBGZGubnWDvoVs1fJJZ8-J4w?e=bfj7lD&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) där det förklaras vilka tolkningar ni kan få lov att göra. (Laddas upp efter genomgången med distansklassen).
+Figma-skissen ger inte en fullständig överblick över hur projektet bör byggas. [Se tillhörande introduktionsfilm](https://funet.sharepoint.com/:v:/s/FrontendutvecklareYH-Fe24Distans/Eb0ibwDmzD5Cigvm9insGJwBGZGubnWDvoVs1fJJZ8-J4w?e=bfj7lD&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) där det förklaras vilka tolkningar ni kan få lov att göra.
 
 ## Resurser
 
@@ -63,15 +63,9 @@ Figma-skissen ger inte en fullständig överblick över hur projektet bör bygga
 - Som vanligt har ni tillgång till datan i mitt API genom nedanstående anrop:
 
 ```
-GET https://santosnr6.github.io/Data/events.json
-```
+https://santosnr6.github.io/Data/events.json
 
-## Halvtidsuppföljning
 
-Nästa fredag den 2/5 kör vi halvtidsuppföljning igen. Jag och Jacob kommer samla er i mindre grupper om 4-5 studerande, där ni får visa upp vad ni hunnit med så långt, vad ni har störst problem med, insikter ni slagits av etc. Dessa möten kommer vara ca 20-25 minuter långa, så se till att komma väl förberedda där ni redan på förhand skrivit upp era eventuella funderingar. Detta gör vi för er skull, så vi kan säkerställa att ni får kontinuerlig feedback, inte bygger fel och inte halkar efter.
-
-Ni bokar in er [via denna länk](https://docs.google.com/spreadsheets/d/1RDqNrn4iVknkT4vJwDWULNPqm8e2bsgHynRPu6JIk4k/edit?usp=sharing) där ni även hittar länk till korrekt Teams-rum.
-
-## Inlämning
-
-Inlämning sker som vanligt i form av att en länk till ditt gitrepo laddas up på Azomo, senast kl 23:59 den 9/5.
+## Externa bibliotek jag har använt
+### Framer Motion
+Framer motion – ett bibliotek för animationer som kan användas med JavaScript, React eller Vue. Jag har inte jobbat mycket med animationer och det verkade som ett ganska lätt bibliotek att börja med och min tanke var att använda det först och främst till att skapa en gradient bakgrund med animation på min OrdersPage. Så när man klickar sig in blir det en snygg övergång med animation och det skapar en mjuk övergång när sidan laddas.  
