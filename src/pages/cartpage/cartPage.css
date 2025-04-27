@@ -1,0 +1,14 @@
+.cart-page {
+    background-color: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cart-page__header {
+        color: var(--pink);
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 2.5rem;
+    }
+}
