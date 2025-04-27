@@ -1,0 +1,16 @@
+.orders-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
+    padding: 2rem;
+
+
+    .orders-page__title {
+        color: var(--pink);
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 2.5rem;
+    }
+}
