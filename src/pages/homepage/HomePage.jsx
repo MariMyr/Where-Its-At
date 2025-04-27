@@ -1,6 +1,6 @@
 import "./homePage.css";
 import logo from "../../assets/images/logo.svg";
-import NavBar from "../../components/NavBar";
+import NavBar from "../../components/navbar/Navbar";
 
 function HomePage() {
   return (
