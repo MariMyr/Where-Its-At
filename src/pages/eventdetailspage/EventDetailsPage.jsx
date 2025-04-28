@@ -1,6 +1,7 @@
 import "./eventDetailsPage.css";
 import { Link } from "react-router-dom";
 import SingleEventItem from "../../components/singleeventitem/SingleEventitem";
+import NavBar from "../../components/navbar/Navbar";
 
 function EventDetailsPage() {
   return (
@@ -18,6 +19,7 @@ function EventDetailsPage() {
       <Link to="/cart" className="details-page__link">
         <button className="addToCart__button">Lägg till i varukorgen</button>
       </Link>
+      <NavBar />
     </section>
   );
 }

@@ -1,11 +1,14 @@
 .details-page {
   background-color: var(--dark-blue);
   font-family: "Fira Sans", sans-serif;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  max-width: 510px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 6rem;
 
   .back__button {
     color: var(--pink);
@@ -22,7 +25,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 
     .details-page__title {
       color: var(--pink);
@@ -35,7 +38,7 @@
       font-weight: 200;
       font-style: italic;
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 3.5rem;
     }
   }
   .details-page__link {
@@ -46,13 +49,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     background-color: var(--turquoise);
     color: var(--white);
     height: 3rem;
     padding: 1rem;
     border-radius: 0.2rem;
-    width: 100%; /* FIXA*/
+    width: 100%; 
     font-size: 18px;
   }
 }
