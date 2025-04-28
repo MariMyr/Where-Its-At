@@ -7,7 +7,12 @@
 Framer motion – ett bibliotek för animationer som kan användas med JavaScript, React eller Vue. Jag har inte jobbat mycket med animationer och det verkade som ett ganska lätt bibliotek att börja med och min tanke var att använda det först och främst till att skapa en gradient bakgrund med animation på min OrdersPage. Så när man klickar sig in blir det en snygg övergång med animation och det skapar en mjuk övergång när sidan laddas.  
 
 
+### Font Awesome  
+Jag har använt Font Awesome för ikoner. Font Awesome är ett externt bibliotek med tusenvis av ikoner som är lätt att använda och implementera i sitt projekt. Man skapar en användare och har sitt egna kit som man kan använda vid att installera paket i React, i detta tillfället, och sen är det bara att lägga till de ikoner man vill använda. Det är väldigt smidigt och enkelt. 
 
+
+
+## Uppgiften:
 
 Dags att rocka koden! Din mission är att bygga frontenden till Where it’s @ – en app där lokala musikevent får stå i rampljuset.
 Med React som ditt instrument ska du komponera en upplevelse som får användarna att klicka vidare till nästa spelning med ett leende.
