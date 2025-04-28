@@ -5,7 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
+  .back__button {
+    color: var(--pink);
+    display: flex;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-decoration: none;
+  }
   .details-page__header {
     display: flex;
     flex-direction: column;
@@ -28,7 +38,14 @@
       margin-bottom: 3rem;
     }
   }
+  .details-page__link {
+    text-decoration: none;
+  }
   .addToCart__button {
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     background-color: var(--turquoise);
     color: var(--white);
@@ -37,6 +54,5 @@
     border-radius: 0.2rem;
     width: 100%; /* FIXA*/
     font-size: 18px;
-    font-family: "Fira Sans", sans-serif;
   }
 }

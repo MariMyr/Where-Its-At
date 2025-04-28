@@ -1,0 +1,29 @@
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    color: var(--white);
+    border: 1px solid var(--pink);
+
+    .ticket-cost {
+        font-size: 32px;
+        font-weight: 500;
+        border-bottom: 1px solid var(--pink);
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    .ticket-counter {
+        display: flex;
+        justify-content: space-between;
+        border-right: 1px solid var(--pink);
+        padding: 1rem;
+    }
+    .ticket-counter__quantity {
+        font-size: 28px;
+        font-weight: 200;
+    }
+    .ticket-counter__button {
+        width: 2rem;
+    }
+
+}
