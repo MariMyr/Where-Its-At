@@ -1,23 +1,17 @@
 .navbar {
-    font-family: 'Fira-sans', sans-serif;
-    display: flex;
-    gap: 20px;
-    font-size: 1rem;
-    background-color: var(--pink);
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 1rem 0;
-    justify-content: center;
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: var(--white);
-    padding: 0.5rem 1rem;
-  }
-
-  /* .navbar a:hover {
-    background-color: #ff5733;
-    color: white;
-  } */
+  font-family: "Fira-sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1rem;
+  background-color: var(--pink);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.5rem 1rem;
+}

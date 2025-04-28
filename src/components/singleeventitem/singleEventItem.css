@@ -1,0 +1,26 @@
+.single-event__info {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+
+    .single-event__name {
+        text-align: center;
+        font-size: 35px;
+        color: var(--pink);
+        font-weight: 400;
+        margin-bottom: .7rem;
+    }
+    .single-event__time {
+        font-size: 19px;
+        font-weight: 800;
+        color: var(--turquoise);
+        text-align: center;
+        margin-bottom: .7rem;
+    }
+    .single-event__place {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 200;
+        text-align: center;
+    }
+}

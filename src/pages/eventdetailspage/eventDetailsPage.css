@@ -1,14 +1,42 @@
 .details-page {
-    background-color: var(--dark-blue);
-    height: 100vh;
+  background-color: var(--dark-blue);
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .details-page__header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
 
-    .details-page__header {
-        color: var(--pink);
-        font-size: 32px;
-        font-weight: 400;
-        margin-top: 2.5rem;
+    .details-page__title {
+      color: var(--pink);
+      font-size: 32px;
+      font-weight: 400;
     }
+    .details-page__text {
+      color: var(--white);
+      font-size: 19px;
+      font-weight: 200;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  .addToCart__button {
+    margin-top: 2rem;
+    background-color: var(--turquoise);
+    color: var(--white);
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    width: 100%; /* FIXA*/
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+  }
 }

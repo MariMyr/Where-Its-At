@@ -1,0 +1,62 @@
+.eventitem {
+  margin-bottom: 0.5rem;
+
+  .eventitem__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--light-grey);
+  }
+  .eventitem__dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white);
+    border-radius: 0.2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .eventitem__day {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .eventitem__month {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 0.2rem;
+    font-weight: 500;
+  }
+  .eventitem__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 1.3rem;
+    border-bottom: 1px solid var(--light-grey);
+  }
+  .eventitem__name {
+    font-size: 22px;
+    color: var(--white);
+    margin-bottom: .2rem;
+  }
+  .eventitem__time-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .eventitem__place {
+    font-size: 12px;
+    font-style: italic;
+  }
+  .eventitem__time {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .eventitem__price {
+    color: var(--turquoise);
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    align-self: flex-end;
+  }
+}
