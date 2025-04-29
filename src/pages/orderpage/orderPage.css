@@ -6,8 +6,7 @@
     background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
     padding: 2rem;
 
-
-    .orders-page__title {
+  .orders-page__title {
         color: var(--pink);
         font-size: 32px;
         font-weight: 400;

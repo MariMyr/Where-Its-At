@@ -2,6 +2,7 @@
   font-family: "Fira-sans", sans-serif;
   display: flex;
   justify-content: center;
+  max-width: 510px;
   gap: 20px;
   font-size: 1rem;
   background-color: var(--pink);

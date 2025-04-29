@@ -3,11 +3,14 @@ import TicketCounter from '../ticketcounter/TicketCounter';
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import { useEffect, useState } from "react";
+import useTicketStore from '../../stores/useTicketStore';
 
 function SingleEventItem() {
     const [event, setEvent] = useState(null);
     const { data : events, isLoading, isError } = useFetch('https://santosnr6.github.io/Data/events.json');
     const { id } = useParams();
+    const cart = useTicketStore(state => state.cart);
+
   
     useEffect(() => {
       if (id && events) {
@@ -31,7 +34,7 @@ function SingleEventItem() {
        <h1 className="single-event__name">{event.name}</h1>
        <p className="single-event__time">{event.when.date} kl {event.when.from} -{event.when.to}</p>
        <p className="single-event__place">@ {event.where}</p>
-       <TicketCounter event={event}/>
+       <TicketCounter event={event} showPrice={true} />
     </section>
   )
 }

@@ -1,14 +1,57 @@
 .cart-page {
+    font-family: 'Fira Sans', sans-serif;
     background-color: var(--dark-blue);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 6rem;
 
-    .cart-page__header {
+     .cart-page__title {
         color: var(--pink);
         font-size: 32px;
         font-weight: 400;
-        margin-top: 2.5rem;
+        margin: 2.5rem 0 2rem 0;
     }
+    .cart-page__empty-cart-message {
+        font-size: 22px;
+        color: var(--white);
+    }
+    .cart-page__list {
+        margin-bottom: 1rem;
+    }
+    .cart-page__sum-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cart-page__sum-text {
+            color: var(--white);
+            font-size: 19px;
+            font-style: italic;
+            font-weight: 200;
+            margin-bottom: 1rem;
+        }
+        .cart-page__total-sum {
+            font-size: 32px;
+            color: white;
+        }
+    }
+    .cart-page__link {
+        text-decoration: none;
+    }
+    .sendOrder__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: var(--turquoise);
+        color: var(--white);
+        height: 3rem;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        width: 100%; 
+        font-size: 22px;
+      }
 }
