@@ -1,7 +1,7 @@
 import './ticketCounter.css';
 import useTicketStore from '../../stores/useTicketStore';
 
-function TicketCounter({event}) {
+function TicketCounter({event, showPrice = true}) {
     const cart = useTicketStore(state => state.cart);
     const { addTicket, increaseQuantity, decreaseQuantity } = useTicketStore();
     const ticket = cart.find(item => item.id === event.id);
@@ -16,17 +16,22 @@ function TicketCounter({event}) {
             addTicket(event);
         }
     };
-
     const handleDecrease = () => {
         if (ticket && ticket.quantity > 0) {
             decreaseQuantity(event.id);
         }
     };
 
-
   return (
     <section className="ticket-container">
+        {showPrice ? (
         <h3 className="ticket-cost">{event.price * quantity} SEK</h3>
+        ) : (
+            <section className="ticket__info">
+                <h3 className="ticket__name">{event.name}</h3>
+                <p className="ticket__time">{event.when.date} kl {event.when.from} -{event.when.to}</p>
+            </section>
+        )}
     <section className="ticket-counter">
         <button className="ticket-counter__button" onClick={handleDecrease}>-</button>
         <p className="ticket-counter__quantity">{quantity}</p>

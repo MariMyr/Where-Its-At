@@ -1,13 +1,14 @@
 .ticket-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 250px;
   margin-top: 2rem;
   color: var(--white);
   border: 1px solid var(--pink);
 
   .ticket-cost {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
     border-bottom: 1px solid var(--pink);
     padding: 1rem;
@@ -16,11 +17,10 @@
   .ticket-counter {
     display: flex;
     justify-content: space-between;
-    border-right: 1px solid var(--pink);
     padding: 1rem;
   }
   .ticket-counter__quantity {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 200;
   }
   .ticket-counter__button {
@@ -30,4 +30,24 @@
     color: var(--white);
     font-size: 2rem;
   }
+}
+/*--CART-PAGE styling--*/
+.cart-page .ticket-container {
+  margin: 1rem;
+}
+.cart-page .ticket__name {
+  font-family: 'Sansita One', sans-serif;
+  font-size: 24px;
+  color: var(--pink);
+  font-weight: 300;
+  margin: .4rem 0 .2rem .4rem;
+}
+.cart-page .ticket__time {
+  color: var(--turquoise);
+  font-size: 14px;
+  border-bottom: 1px solid var(--pink);
+  margin-left: .4rem;
+}
+.cart-page .ticket-counter {
+  padding: .2rem;
 }
