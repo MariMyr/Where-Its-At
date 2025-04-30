@@ -14,6 +14,12 @@ Jag har använt Font Awesome för ikoner. Font Awesome är ett externt bibliotek
 
 Jag har använt UUID för att generera unika ordernummer för varje biljettköp. Alla biljetter har ett unikt ordernummer. UUID (Universal Unique Identifier) är en trygg metod som används för att skapa unika id-nummer som är svåra att duplicera. Jag använder v4-varianten av UUID, som bygger på slumpmässiga värden. Det passar bra i min app då jag vill ha ett kort, unikt id/ordernummer för varje biljett. Jag har kortat ner UUID till fem tecken, gör dem till versaler och lägger till # i början. Genom att använda detta känner jag mig trygg på att varje order får ett unikt nummer. 
 
+### React-barcode: 
+
+Jag använder biblioteket react-barcode för att generera en streckkod för varje biljett på OrderPage. Det gör biljetterna med autentiska. Biblioteket är lätt att använda och jag kan välja vilket värde jag vill som streckkod – i detta fall mitt genererade ordernummer (t.ex. #A4G96). Jag har valt format=”CODE128” eftersom det är dett standardformat som stöder både bokstäver och siffror.  
+
+
+
 
 
 
