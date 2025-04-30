@@ -1,6 +1,7 @@
 .events-page {
   background-color: var(--dark-blue);
   font-family: "Fira Sans", sans-serif;
+  min-height: 100vh;
   max-width: 510px;
   display: flex;
   flex-direction: column;
