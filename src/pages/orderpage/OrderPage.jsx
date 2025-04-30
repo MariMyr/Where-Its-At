@@ -4,6 +4,7 @@ import TicketItem from "../../components/ticketitem/TicketItem";
 import NavBar from "../../components/navbar/Navbar";
 import useTicketStore from "../../stores/useTicketStore";
 import generateOrderNumber from "../../utils/generateOrderNumber";
+import generateRandomSeat from "../../utils/generateSeats";
 import { useEffect, useState } from "react";
 
 function OrderPage() {
@@ -24,18 +25,21 @@ function OrderPage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {cart.length === 0 ? (
+           {cart.length === 0 ? (
         <p className="order-page__empty">Du har inga biljetter</p>
       ) : (
-        cart.map((event, index) =>
-          Array.from({ length: event.quantity }).map((_, ticketIndex) => (
+        cart.map((event, index) => {
+          const seats = generateRandomSeat(event.quantity);
+          return Array.from({ length: event.quantity }).map((_, ticketIndex) => (
             <TicketItem
               key={`${event.id}-${ticketIndex}-${orderNumbers[index + ticketIndex]}`}
               event={event}
               orderNumber={orderNumbers[index + ticketIndex]}
+              section={seats.section}
+              seat={seats.seats[ticketIndex]}
             />
           ))
-        )
+        })
       )}
       <NavBar />
     </motion.section>

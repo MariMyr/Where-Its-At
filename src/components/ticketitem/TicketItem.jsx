@@ -1,7 +1,7 @@
 import './ticketItem.css';
 import Barcode from 'react-barcode';
 
-function TicketItem({ event, orderNumber }) {
+function TicketItem({ event, orderNumber, seat, section }) {
   return (
     <section className="ticket-item">
         <section className="ticket__section">
@@ -28,7 +28,7 @@ function TicketItem({ event, orderNumber }) {
         </section>
         <section className="ticket__section">
             <h4 className="ticket__label">INFO</h4>
-            <p className="ticket__seats"></p>
+            <p className="ticket__seats">Section {section} - seat {seat}</p>
         </section>
         <section className="ticket__barcode">
             <Barcode value={orderNumber} format="CODE128" />
