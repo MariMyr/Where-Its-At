@@ -10,6 +10,12 @@ Framer motion – ett bibliotek för animationer som kan användas med JavaScrip
 ### Font Awesome  
 Jag har använt Font Awesome för ikoner. Font Awesome är ett externt bibliotek med tusenvis av ikoner som är lätt att använda och implementera i sitt projekt. Man skapar en användare och har sitt egna kit som man kan använda vid att installera paket i React, i detta tillfället, och sen är det bara att lägga till de ikoner man vill använda. Det är väldigt smidigt och enkelt. 
 
+### UUID: 
+
+Jag har använt UUID för att generera unika ordernummer för varje biljettköp. Alla biljetter har ett unikt ordernummer. UUID (Universal Unique Identifier) är en trygg metod som används för att skapa unika id-nummer som är svåra att duplicera. Jag använder v4-varianten av UUID, som bygger på slumpmässiga värden. Det passar bra i min app då jag vill ha ett kort, unikt id/ordernummer för varje biljett. Jag har kortat ner UUID till fem tecken, gör dem till versaler och lägger till # i början. Genom att använda detta känner jag mig trygg på att varje order får ett unikt nummer. 
+
+
+
 
 
 ## Uppgiften:
