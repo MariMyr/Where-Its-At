@@ -1,0 +1,48 @@
+.ticket-item {
+    font-family: 'Fira Sans', sans-serif;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    background: var(--white);
+
+    .ticket__section {
+        margin-bottom: 1rem;
+        border-bottom: 1px dashed var(--light-grey);
+    }
+        .ticket__label {
+            font-size: 10px;
+            color: var(--grey);
+            margin-bottom: 1rem;
+        }
+        .ticket__title {
+            font-size: 26px;
+            color: var(--pink);
+            font-family: 'Sansita One', sans-serif;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        .ticket__place {
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+        .ticket__when {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ticket__date,
+        .ticket__from,
+        .ticket__to  {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .ticket__barcode {
+            text-align: center;
+        }
+        .ticket__barcode svg {
+            height: 6rem;
+            width: auto;
+        }
+
+}

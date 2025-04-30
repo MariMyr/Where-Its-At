@@ -1,15 +1,26 @@
-.orders-page {
-    height: 100vh;
-    display: flex;
+.order-page {
+    min-height: 100vh;
+    max-width: 510px;
+    /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
     padding: 2rem;
+    width: 100;
+    margin-bottom: 3rem;
+    background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
 
   .orders-page__title {
         color: var(--pink);
         font-size: 32px;
         font-weight: 400;
         margin-top: 2.5rem;
+    }
+    .order-page__empty {
+        font-size: 22px;
+        color: var(--dark-blue);
     }
 }
