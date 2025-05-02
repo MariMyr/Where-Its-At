@@ -1,10 +1,11 @@
 .navbar {
-  font-family: "Fira-sans", sans-serif;
+  font-family: "Sansita One", sans-serif;
   display: flex;
   justify-content: center;
   max-width: 510px;
   gap: 20px;
   font-size: 1rem;
+  font-weight: 200;
   background-color: var(--pink);
   width: 100%;
   position: fixed;

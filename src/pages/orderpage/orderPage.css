@@ -1,10 +1,6 @@
 .order-page {
     min-height: 100vh;
     max-width: 510px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
@@ -20,7 +16,10 @@
         margin-top: 2.5rem;
     }
     .order-page__empty {
-        font-size: 22px;
-        color: var(--dark-blue);
+        font-size: 24px;
+        color: var(--white);
+        text-align: center;
+        margin-top: 3rem;
+        font-family: 'Sansita One', sans-serif;
     }
 }
