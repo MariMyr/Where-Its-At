@@ -1,6 +1,7 @@
 .search {
     margin: 1.5rem;
     width: 80%;
+    position: relative;
 
     .searchbar {
         display: flex;
@@ -26,5 +27,24 @@
         color: var(--white);
         width: 100%;
         font-size: 1rem;
+        outline: none;
+      }
+      .search__list {
+        list-style: none;
+        margin: .5rem 0 0 0;
+        position: absolute;
+        width: 100%;
+        background-color: var(--dark-blue-search);
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      .search__item {
+        padding: .5rem 1rem;
+        cursor: pointer;
+        color: var(--white);
+      }
+      .search__item.no-match {
+        color: #aaa;
       }
 }
