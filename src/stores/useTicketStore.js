@@ -39,17 +39,3 @@ const useTicketStore = create((set) => ({
 }));
 
 export default useTicketStore;
-
-
-
-// const useTicketStore = create((set) => ({
-//   orders: [],
-  
-//   addTicket: (ticket) => set((state) => ({
-//     orders: [...state.orders, ticket]
-//   })),
-
-//   resetOrders: () => set({ orders: [] })
-// }));
-
-// export default useTicketStore;
