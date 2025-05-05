@@ -1,28 +1,55 @@
 .order-page {
     min-height: 100vh;
     max-width: 510px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
     padding: 2rem;
     width: 100;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; */
+    padding: 2rem;
+    position: relative;
     background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
-
-  .orders-page__title {
-        color: var(--pink);
-        font-size: 32px;
-        font-weight: 400;
-        margin-top: 2.5rem;
-    }
-    .order-page__empty {
-        font-size: 24px;
-        color: var(--white);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 3rem;
-        font-family: 'Sansita One', sans-serif;
-    }
+      
 }
+.order-page__title {
+    color: var(--pink);
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+.order-page__empty {
+    font-size: 24px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Sansita One', sans-serif;
+}
+.ticket-slide {
+    margin: 0 1rem; 
+  }
+  .slick-prev, .slick-next {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  .slick-prev {
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: var(--white)
+  }
