@@ -18,6 +18,9 @@ Jag har använt UUID för att generera unika ordernummer för varje biljettköp.
 
 Jag använder biblioteket react-barcode för att generera en streckkod för varje biljett på OrderPage. Det gör biljetterna med autentiska. Biblioteket är lätt att använda och jag kan välja vilket värde jag vill som streckkod – i detta fall mitt genererade ordernummer (t.ex. #A4G96). Jag har valt format=”CODE128” eftersom det är dett standardformat som stöder både bokstäver och siffror.  
 
+### React-swipeable: 
+
+Jag använder också react-swipeable. Detta är ett bibliotek som gör det enkelt att implementera swipe i React-appar. Det använder sig av en custom hook, useSwipeable, för att hantera swipe-gester på mobila enheter. Med denna hook kan man definiera funktioner för att reagera på olika swipe-gester, som att swipa till höger eller vänster. Jag valde att använda detta för att ge användaren en smidig och modern navigering av applikationen, och det gör den mer intuitiv och användarvänlig.
 
 
 
