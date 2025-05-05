@@ -6,6 +6,9 @@ import useCartStore from "../../stores/useCartStore";
 import generateOrderNumber from "../../utils/generateOrderNumber";
 import generateRandomSeat from "../../utils/generateSeats";
 import { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function OrderPage() {
   const cart = useCartStore((state) => state.cart);
@@ -18,6 +21,14 @@ function OrderPage() {
     setOrderNumbers(generated);
   }, [cart]);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <motion.section
       className="order-page"
@@ -25,21 +36,31 @@ function OrderPage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-           {cart.length === 0 ? (
+      {cart.length === 0 ? (
         <p className="order-page__empty">Inga aktuella ordrar</p>
       ) : (
-        cart.map((event, index) => {
-          const seats = generateRandomSeat(event.quantity);
-          return Array.from({ length: event.quantity }).map((_, ticketIndex) => (
-            <TicketItem
-              key={`${event.id}-${ticketIndex}-${orderNumbers[index + ticketIndex]}`}
-              event={event}
-              orderNumber={orderNumbers[index + ticketIndex]}
-              section={seats.section}
-              seat={seats.seats[ticketIndex]}
-            />
-          ))
-        })
+        <Slider {...settings}>
+          {cart.map((event, index) => {
+            const seats = generateRandomSeat(event.quantity);
+            return Array.from({ length: event.quantity }).map(
+              (_, ticketIndex) => (
+                <div
+                  className="ticket-slide"
+                  key={`${event.id}-${ticketIndex}-${
+                    orderNumbers[index + ticketIndex]
+                  }`}
+                >
+                  <TicketItem
+                    event={event}
+                    orderNumber={orderNumbers[index + ticketIndex]}
+                    section={seats.section}
+                    seat={seats.seats[ticketIndex]}
+                  />
+                </div>
+              )
+            );
+          })}
+        </Slider>
       )}
       <NavBar />
     </motion.section>
