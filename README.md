@@ -22,6 +22,12 @@ Jag använder biblioteket react-barcode för att generera en streckkod för varj
 
 Jag använder också react-swipeable. Detta är ett bibliotek som gör det enkelt att implementera swipe i React-appar. Det använder sig av en custom hook, useSwipeable, för att hantera swipe-gester på mobila enheter. Med denna hook kan man definiera funktioner för att reagera på olika swipe-gester, som att swipa till höger eller vänster. Jag valde att använda detta för att ge användaren en smidig och modern navigering av applikationen, och det gör den mer intuitiv och användarvänlig.
 
+### React-slick: 
+
+I min applikation använder jag biblioteket react-slick för att skapa en smidig och användarvänlig slider på ordersidan, där varje biljett presenteras som ett "kort" man kan swipa mellan. react-slick bygger på det populära jQuery-biblioteket Slick Carousel, men är anpassat för React-komponenter. react-slick är ett komponentbaserat bibliotek som låter mig skapa karuseller genom att wrappa innehållet i en <Slider>-komponent och definiera inställningar via ett objekt, t.ex. antal slides, pilar, animation, m.m. Eftersom varje biljett i min app är ett eget element (med information som plats, sektion, och ordernummer) ville jag presentera dem på ett sätt som är interaktivt, visuellt tydligt och roligt för användaren. 
+
+
+
 
 
 
