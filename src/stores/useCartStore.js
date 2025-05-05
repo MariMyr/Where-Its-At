@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
-const useTicketStore = create((set) => ({
+const useCartStore = create((set) => ({
     cart : [],
-    addTicket : (event) => {
+    addEvent : (event) => {
         set((state) => {
             const exists = state.cart.find((i) => i.id === event.id);
             if (exists) {
@@ -36,6 +36,11 @@ const useTicketStore = create((set) => ({
             )
         }));
     },
+    removeEvent: (id) => {
+        set((state) => ({
+            cart: state.cart.filter(item => item.id !== id),
+        }));
+    }
 }));
 
-export default useTicketStore;
+export default useCartStore;
