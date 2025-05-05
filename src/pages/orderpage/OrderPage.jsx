@@ -2,13 +2,13 @@ import "./orderPage.css";
 import { motion } from "framer-motion";
 import TicketItem from "../../components/ticketitem/TicketItem";
 import NavBar from "../../components/navbar/Navbar";
-import useTicketStore from "../../stores/useTicketStore";
+import useCartStore from "../../stores/useCartStore";
 import generateOrderNumber from "../../utils/generateOrderNumber";
 import generateRandomSeat from "../../utils/generateSeats";
 import { useEffect, useState } from "react";
 
 function OrderPage() {
-  const cart = useTicketStore((state) => state.cart);
+  const cart = useCartStore((state) => state.cart);
   const [orderNumbers, setOrderNumbers] = useState([]);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ function OrderPage() {
       transition={{ duration: 1 }}
     >
            {cart.length === 0 ? (
-        <p className="order-page__empty">Du har inga biljetter</p>
+        <p className="order-page__empty">Inga aktuella ordrar</p>
       ) : (
         cart.map((event, index) => {
           const seats = generateRandomSeat(event.quantity);

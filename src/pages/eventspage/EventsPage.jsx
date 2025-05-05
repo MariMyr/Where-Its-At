@@ -3,6 +3,7 @@ import SearchBar from "../../components/searchbar/SearchBar";
 import EventsList from "../../components/eventslist/EventsList";
 import NavBar from "../../components/navbar/Navbar";
 import useFetch from "../../hooks/useFetch";
+import { Link } from "react-router-dom";
 
 function EventsPage() {
   const { data : events, isLoading, isError } = useFetch('https://santosnr6.github.io/Data/events.json');
@@ -22,6 +23,9 @@ function EventsPage() {
       <SearchBar events={events} />
       <EventsList events={events} />
       <NavBar />
+      <Link to="/cart" className="events-page__link">
+        <button className="events-page__button">Till varukorgen</button>
+      </Link>
     </section>
   );
 }

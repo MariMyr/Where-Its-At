@@ -1,23 +1,25 @@
 import './ticketCounter.css';
-import useTicketStore from '../../stores/useTicketStore';
+import useCartStore from '../../stores/useCartStore';
 
 function TicketCounter({event, showPrice = true}) {
-    const cart = useTicketStore(state => state.cart);
-    const { addTicket, increaseQuantity, decreaseQuantity } = useTicketStore();
+    const cart = useCartStore(state => state.cart);
+    const { addEvent, increaseQuantity, decreaseQuantity, removeEvent } = useCartStore();
     const ticket = cart.find(item => item.id === event.id);
     const quantity = ticket ? ticket.quantity : 0;
 
     const handleIncrease = () => {
         if (ticket) {
-            // Om ticket redan finns, bara öka quantity
             increaseQuantity(event.id);
         } else {
-            // Om ticket inte finns, lägg till i cart
-            addTicket(event);
+            addEvent(event);
         }
     };
     const handleDecrease = () => {
-        if (ticket && ticket.quantity > 0) {
+        if (!ticket) return;
+
+        if (ticket.quantity === 1) {
+            removeEvent(event.id);
+        } else {
             decreaseQuantity(event.id);
         }
     };

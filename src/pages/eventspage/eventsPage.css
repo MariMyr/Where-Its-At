@@ -17,4 +17,22 @@
     font-size: 32px;
     font-weight: 400;
   }
+  .events-page__link {
+    text-decoration: none;
+  }
+  .events-page__button {
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 1rem;
+    background-color: var(--turquoise);
+    color: var(--white);
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    width: 100%; 
+    font-size: 22px;
+  }
 }
