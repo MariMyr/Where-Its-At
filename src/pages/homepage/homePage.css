@@ -13,6 +13,7 @@
         font-size: 32px;
         font-weight: 400;
         margin: 1rem 0 .4rem 0;
+        text-align: center;
     }
     .home-page__text {
         color: var(--white);

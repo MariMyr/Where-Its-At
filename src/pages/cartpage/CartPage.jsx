@@ -6,13 +6,13 @@ import NavBar from '../../components/navbar/Navbar';
 
 function CartPage() {
   const cart = useCartStore(state => state.cart);
-  // const ticket = cart.find(item => item.id === event.id);
-  // const quantity = ticket ? ticket.quantity : 0;
   const totalSum = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
 
   return (
     <section className="cart-page">
+      <Link to="/events" className="back__button">
+        <i className="fa-solid fa-arrow-left"></i>
+      </Link>
     <header className="cart-page__header">
       <h1 className="cart-page__title">Order</h1>
     </header>

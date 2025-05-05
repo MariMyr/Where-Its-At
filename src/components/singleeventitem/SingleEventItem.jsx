@@ -3,14 +3,11 @@ import TicketCounter from '../ticketcounter/TicketCounter';
 import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import { useEffect, useState } from "react";
-import useCartStore from '../../stores/useCartStore';
 
 function SingleEventItem() {
     const [event, setEvent] = useState(null);
     const { data : events, isLoading, isError } = useFetch('https://santosnr6.github.io/Data/events.json');
     const { id } = useParams();
-    const cart = useCartStore(state => state.cart); // används denna??
-
   
     useEffect(() => {
       if (id && events) {

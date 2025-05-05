@@ -1,6 +1,6 @@
 import "./eventDetailsPage.css";
 import { Link } from "react-router-dom";
-import SingleEventItem from "../../components/singleeventitem/SingleEventitem";
+import SingleEventItem from "../../components/singleeventitem/SingleEventItem";
 import NavBar from "../../components/navbar/Navbar";
 
 function EventDetailsPage() {

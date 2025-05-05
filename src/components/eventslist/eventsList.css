@@ -1,6 +1,6 @@
 .eventslist {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .5rem;
     padding: 1rem;
 }
