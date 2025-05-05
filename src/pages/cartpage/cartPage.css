@@ -8,6 +8,15 @@
     align-items: center;
     padding-bottom: 6rem;
 
+    .back__button {
+        color: var(--pink);
+        display: flex;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        text-decoration: none;
+    }
      .cart-page__title {
         color: var(--pink);
         font-size: 32px;

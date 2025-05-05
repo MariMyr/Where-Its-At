@@ -23,9 +23,9 @@ function EventsPage() {
       <SearchBar events={events} />
       <EventsList events={events} />
       <NavBar />
-      <Link to="/cart" className="events-page__link">
+      {/* <Link to="/cart" className="events-page__link">
         <button className="events-page__button">Till varukorgen</button>
-      </Link>
+      </Link> */}
     </section>
   );
 }
