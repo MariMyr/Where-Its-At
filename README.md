@@ -51,12 +51,3 @@ Ditt uppdrag är att koda ihop en frontend till biljettjänsten _Where its @_. D
 
 
 
-## Övriga krav
-
-- Er app måste inte vara pixel-perfekt mot skissen, men ni måste ha en enhetlig, responsiv design
-- Appen skall se bra ut på alla skärmstorlekar mellan 375px - 500px
-- Tillgänglighetskontroll/anpassning skall göras innan inlämning
-- Sidan får aldrig krascha
-- När en beställing gjorts skall en biljett skapas där ni genererar fram ett biljettID på 5 tecken (endast STORA BOKSTÄVER och siffror tillåtna), en Sektion och en sittplats. Vid köp av flera biljetter till ett och samma evenemang skall Sektionen vara samma på alla biljetter för det eventet, och sittplatserna skall vara bredvid varandra.
-
-
