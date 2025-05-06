@@ -29,15 +29,3 @@ h1 {
 .page-text {
   color: var(--white);
 }
-
-/*
-Använda fonts: 
-h1, h2, .logo-text {
-  font-family: 'Sansita One', sans-serif;
-}
-
-body, p, button, input {
-  font-family: 'Fira Sans', sans-serif;
-}
-
-*/
