@@ -1,7 +1,7 @@
 import { useSwipeable } from "react-swipeable";
 import { useLocation, useNavigate, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence, distance } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./swipeWrapper.css";
 
 const swipeRoutes = ["/", "/events", "/orders"];
@@ -45,7 +45,7 @@ function SwipeWrapper() {
           initial={{ x: direction === -1 ? 300 : -300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: direction === -1 ? -300 : 300, opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <Outlet />
         </motion.div>
