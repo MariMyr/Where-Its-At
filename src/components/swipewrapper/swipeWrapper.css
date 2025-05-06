@@ -4,7 +4,7 @@
     min-height: 100vh;
     max-width: 510px;
     overflow-x: hidden;
-    background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
+    background: var(--dark-blue);
 
     .motion-page {
         height: 100%;
