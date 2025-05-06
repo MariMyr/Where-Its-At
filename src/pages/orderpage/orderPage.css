@@ -1,12 +1,6 @@
 .order-page {
     min-height: 100vh;
     max-width: 510px;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
-    width: 100;
-    margin-bottom: 3rem; */
     padding: 2rem;
     position: relative;
     background: linear-gradient(180deg, var(--pink), var(--purple), var(--dark-blue));
