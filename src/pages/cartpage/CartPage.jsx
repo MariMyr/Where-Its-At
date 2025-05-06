@@ -9,7 +9,7 @@ function CartPage() {
 
   return (
     <section className="cart-page">
-      <Link to="/events" className="back__button">
+      <Link to="/events" className="back__button" aria-label='Tillbaka'>
         <i className="fa-solid fa-arrow-left"></i>
       </Link>
     <header className="cart-page__header">

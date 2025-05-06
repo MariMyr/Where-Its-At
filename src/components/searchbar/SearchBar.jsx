@@ -34,6 +34,7 @@ function SearchBar({ events }) {
       <section className="searchbar">
         <button
           className="search__button"
+          aria-label="Sök"
           onClick={() => {
             if (filteredEvents.length > 0) {
               handleSelectedEvent(filteredEvents[0].id);
@@ -44,6 +45,7 @@ function SearchBar({ events }) {
         </button>
         <input
           type="text"
+          aria-label="input-field"
           className="search__input"
           value={searchTerm}
           placeholder="Sök event..."

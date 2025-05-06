@@ -5,7 +5,7 @@ import SingleEventItem from "../../components/singleeventitem/SingleEventItem";
 function EventDetailsPage() {
   return (
     <section className="details-page">
-      <Link to="/events" className="back__button">
+      <Link to="/events" className="back__button" aria-label="Tillbaka">
         <i className="fa-solid fa-arrow-left"></i>
       </Link>
       <header className="details-page__header">
