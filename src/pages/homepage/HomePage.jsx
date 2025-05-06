@@ -1,6 +1,5 @@
 import "./homePage.css";
 import logo from "../../assets/images/logo.svg";
-import NavBar from "../../components/navbar/Navbar";
 
 function HomePage() {
   return (
@@ -10,7 +9,6 @@ function HomePage() {
         <h1 className="home-page__title">Where It's @</h1>
         <h3 className="home-page__text">Ticketing made easy</h3>
       </section>
-      <NavBar />
     </section>
   );
 }
