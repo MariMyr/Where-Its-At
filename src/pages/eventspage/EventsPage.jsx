@@ -1,7 +1,6 @@
 import "./eventsPage.css";
 import SearchBar from "../../components/searchbar/SearchBar";
 import EventsList from "../../components/eventslist/EventsList";
-import NavBar from "../../components/navbar/Navbar";
 import useFetch from "../../hooks/useFetch";
 import { Link } from "react-router-dom";
 
@@ -22,10 +21,6 @@ function EventsPage() {
       </header>
       <SearchBar events={events} />
       <EventsList events={events} />
-      <NavBar />
-      {/* <Link to="/cart" className="events-page__link">
-        <button className="events-page__button">Till varukorgen</button>
-      </Link> */}
     </section>
   );
 }

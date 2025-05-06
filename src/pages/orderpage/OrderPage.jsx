@@ -1,7 +1,6 @@
 import "./orderPage.css";
 import { motion } from "framer-motion";
 import TicketItem from "../../components/ticketitem/TicketItem";
-import NavBar from "../../components/navbar/Navbar";
 import useCartStore from "../../stores/useCartStore";
 import generateOrderNumber from "../../utils/generateOrderNumber";
 import generateRandomSeat from "../../utils/generateSeats";
@@ -62,7 +61,6 @@ function OrderPage() {
           })}
         </Slider>
       )}
-      <NavBar />
     </motion.section>
   );
 }

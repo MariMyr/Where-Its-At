@@ -2,7 +2,6 @@ import './cartPage.css';
 import { Link } from 'react-router-dom';
 import TicketCounter from '../../components/ticketcounter/TicketCounter';
 import useCartStore from '../../stores/useCartStore';
-import NavBar from '../../components/navbar/Navbar';
 
 function CartPage() {
   const cart = useCartStore(state => state.cart);
@@ -36,7 +35,6 @@ function CartPage() {
           </Link>
         </>
       )}
-      <NavBar />
   </section>
   )
 }
