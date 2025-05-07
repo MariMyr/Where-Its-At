@@ -31,7 +31,7 @@ function TicketCounter({event, showPrice = true}) {
         ) : (
             <section className="ticket__info">
                 <h3 className="ticket__name">{event.name}</h3>
-                <p className="ticket__time">{event.when.date} kl {event.when.from} -{event.when.to}</p>
+                <p className="ticket__time">{event.when.date} kl {event.when.from} - {event.when.to}</p>
             </section>
         )}
     <section className="ticket-counter">

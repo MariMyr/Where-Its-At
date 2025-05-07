@@ -30,11 +30,10 @@ function SearchBar({ events }) {
 
   return (
     <section className="search" ref={inputRef}>
-      <p className="error-msg"></p>
       <section className="searchbar">
         <button
           className="search__button"
-          aria-label="Sök"
+          aria-label="Sök event"
           onClick={() => {
             if (filteredEvents.length > 0) {
               handleSelectedEvent(filteredEvents[0].id);
