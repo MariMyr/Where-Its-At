@@ -5,14 +5,15 @@
     max-width: 510px;
     overflow-x: hidden;
     background: var(--dark-blue);
-
+      
     .motion-page {
         height: 100%;
     }
     .bullet-container {
-        position: fixed;
+        position: absolute;
         bottom: 1.5rem;
-        width: 100%;
+        left: 0;
+        right: 0;
         display: flex;
         justify-content: center;
         gap: 1rem;

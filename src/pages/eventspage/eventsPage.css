@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 6rem;
 
   .events-page__header {
     color: var(--pink);

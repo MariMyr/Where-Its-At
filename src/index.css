@@ -3,29 +3,26 @@
   padding: 0;
   margin: 0;
 }
-
 :root {
-  --white: #FFFFFF;
-  --light-grey: #D0D0D0;
+  --white: #ffffff;
+  --light-grey: #d0d0d0;
   --grey: #857979;
-  --dark-blue: #231F42;
-  --pink: #F56B9A;
-  --turquoise: #37AEAB;
-  --purple: #BB6AC9;
-  --organge: #F39440;
+  --dark-blue: #231f42;
+  --pink: #f56b9a;
+  --turquoise: #37aeab;
+  --purple: #bb6ac9;
+  --organge: #f39440;
   --dark-blue-search: #33335c;
 }
-
 @font-face {
-  font-family: 'Sansita One';
-  src: url('./assets/fonts/SansitaOne.ttf') format('truetype');
+  font-family: "Sansita One";
+  src: url("./assets/fonts/SansitaOne.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 h1 {
-  font-family: 'Sansita One', sans-serif;
-} 
+  font-family: "Sansita One", sans-serif;
+}
 .page-text {
   color: var(--white);
 }

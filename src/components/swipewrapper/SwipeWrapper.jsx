@@ -48,17 +48,16 @@ function SwipeWrapper() {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <Outlet />
+          <section className="bullet-container">
+            {swipeRoutes.map((_, index) => (
+              <div
+                key={index}
+                className={`bullet ${index === currentIndex ? "active" : ""}`}
+              />
+            ))}
+          </section>
         </motion.div>
       </AnimatePresence>
-
-      <section className="bullet-container">
-        {swipeRoutes.map((_, index) => (
-          <div
-            key={index}
-            className={`bullet ${index === currentIndex ? "active" : ""}`}
-          />
-        ))}
-      </section>
     </section>
   );
 }
