@@ -13,7 +13,7 @@ function OrderPage() {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: orders.length > 1,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
