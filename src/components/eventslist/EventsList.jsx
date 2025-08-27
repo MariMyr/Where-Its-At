@@ -1,4 +1,4 @@
-import "./eventslist.css";
+import "./eventsList.css";
 import EventItem from "../eventitem/EventItem";
 
 function EventsList({ events }) {
