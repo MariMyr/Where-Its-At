@@ -1,4 +1,32 @@
-# Indivuduell Examination - Where It's @
+# 🎶 Indivuduell Examination - Where It's @
+
+## 📖 Beskrivning  
+Where It’s @ är en React-applikation där lokala musikevent står i rampljuset.  
+Användare kan bläddra bland evenemang, boka biljetter och få unika biljetter genererade med sektion och plats.  
+Projektet byggdes som en individuell examination med fokus på **React, statehantering och API-integration**.  
+
+---
+
+## ✨ Funktioner  
+- 🎤 Lista av musikevent (hämtas från API)  
+- 📄 Detaljsida för evenemang  
+- 🎟️ Boka biljetter med genererat **BiljettID**, sektion och sittplatser  
+- ➡️ Routing mellan sidor  
+- 🗂️ Avancerad statehantering med **Zustand**  
+- 📱 Responsiv design för mobil och desktop  
+- ♿ Tillgänglighetsanpassad  
+
+---
+
+## 🛠️ Tekniker  
+- **React** (Components, Props, useState, useEffect)  
+- **React Router** för navigering  
+- **Zustand** för statehantering  
+- **API-integration** (fetch av musikevent)  
+- **CSS/Responsiv design**  
+- Externa bibliotek (för VG): _t.ex. Framer Motion, Swiper, Material UI_  
+
+---
 
 
 ## Externa bibliotek jag har använt i min app
@@ -24,24 +52,6 @@ I min applikation använder jag biblioteket react-slick för att skapa en smidig
 
 
 
-
-
-
-
-
-
-## Uppgiften:
-
-Dags att rocka koden! Din mission är att bygga frontenden till Where it’s @ – en app där lokala musikevent får stå i rampljuset.
-Med React som ditt instrument ska du komponera en upplevelse som får användarna att klicka vidare till nästa spelning med ett leende.
-Komponenter, props och state – tänk modulärt, tänk snyggt, tänk “det här skulle jag själv vilja använda”.
-Du bygger alltså inte bara ett gränssnitt – du bygger pulsen i stadens musikscen.
-
-## Uppdrag
-
-Ditt uppdrag är att koda ihop en frontend till biljettjänsten _Where its @_. Den ska se ut enligt nedan mockup. Du har också tillgång till [Figma-länk](https://www.figma.com/file/vcgWPPy2q44oZZ2eORL1wB/Where-its-light?node-id=0%3A1) för exportering av assets, färger, kika fonter etc.
-
-![image](https://github.com/user-attachments/assets/de858683-8f5d-4b2b-bd73-1662bcaca8c8)
 
 
 
